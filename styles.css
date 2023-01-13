@@ -108,7 +108,7 @@ p {
 
 button {
     border-style: none;
-    background-color: hsl(157deg 44% 17%);
+    background-color: hsl(158deg 36% 38%);
     color: hsl(0, 0%, 100%);
     width: 15.5rem;
     height: 3rem;
@@ -117,11 +117,11 @@ button {
 }
 
 button:hover {
-    background-color: hsl(157deg 44% 21%);
+    background-color: hsl(157deg 44% 31%);
 }
 
 button:active {
-    background-color: hsl(157deg 44% 37%);
+    background-color: hsl(157deg 44% 21%);
 }
 
 #addCart img {
