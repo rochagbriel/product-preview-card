@@ -37,14 +37,111 @@ The designs were created to the following widths:
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fraunces', serif;
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    width: 38rem;
+    height: 28rem;
+    border-radius: 1rem;
+}
+
+img {
+    width: 18.68rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+aside {
+    margin: 2rem;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.4rem;
+    color: hsl(228, 12%, 48%);
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    margin: 2rem 2rem 2rem 0;
+}
+
+#price h1 {
+    color: hsl(158deg 36% 38%);
+    margin: 0 1rem 0 0;
+}
+
+#price p {
+    text-decoration: line-through;
+    margin: 0;
+}
+
+button {
+    border-style: none;
+    background-color: hsl(157deg 44% 17%);
+    color: hsl(0, 0%, 100%);
+    width: 15.5rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(157deg 44% 21%);
+}
+
+button:active {
+    background-color: hsl(157deg 44% 37%);
+}
+
+#addCart img {
+    width: max-content;
+    height: max-content;
+    border-radius: 0;
+}
+
+#addCart {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
