@@ -152,9 +152,8 @@ footer p {
     margin: 0;
 }
 
-/* Resposive for 375px width Screens */
-
 @media only screen and (max-width: 500px) {
+
     main {
         margin-top: 1rem;
         width: 21.4rem;
