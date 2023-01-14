@@ -59,10 +59,14 @@ main {
     border-radius: 1rem;
 }
 
-img {
+#productPhotoDesk {
     width: 18.68rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+}
+
+#productPhotoMob {
+    display: none;
 }
 
 aside {
@@ -73,6 +77,7 @@ h1 {
     font-family: 'Fraunces', serif;
     font-size: 2rem;
     line-height: 2rem;
+    max-width: 14rem;
     margin-top: 1rem;
 }
 
@@ -114,6 +119,7 @@ button {
     height: 3rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    margin: auto;
 }
 
 button:hover {
@@ -144,4 +150,49 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        margin-top: 1rem;
+        width: 21.4rem;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    #productPhotoDesk {
+        display: none;
+    }
+
+    #productPhotoMob {
+        display: flex;
+        height: 15rem;
+        margin: auto;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    button {
+        width: 85%;
+    }
+
+    h1, h2, #price {
+        margin-left: 1.5rem;
+        max-width: 18rem;
+    }
+
+    p {
+        font-size: 0.86rem;
+        margin-left: 1.5rem;
+        width: 18rem;
+    }
+
+    aside {
+        width: 21.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #price {
+        margin: 1rem 1rem 1rem 1.5rem;
+    }
 }
