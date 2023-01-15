@@ -16,26 +16,20 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: hsl(0, 0%, 100%);
     width: 38rem;
     height: 28rem;
     border-radius: 1rem;
 }
 
-#productPhotoDesk {
+.productPhoto {
     width: 18.68rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
 
-#productPhotoMob {
-    display: none;
-}
-
-aside {
-    margin: 2rem;
+section {
+    margin: 1.5rem 2rem;
 }
 
 h1 {
@@ -43,36 +37,33 @@ h1 {
     font-size: 2rem;
     line-height: 2rem;
     max-width: 14rem;
-    margin-top: 1rem;
-}
-
-h2 {
-    font-weight: 500;
-    font-size: 0.7rem;
-    letter-spacing: 0.4rem;
-    color: hsl(228, 12%, 48%);
+    margin: 1.3rem 0;
 }
 
 p {
     color: hsl(228, 12%, 48%);
     font-size: 0.9rem;
     line-height: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
-#price {
+.topText {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 0.4rem;
+}
+
+.price {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
-    margin: 2rem 2rem 2rem 0;
 }
 
-#price h1 {
+.big-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
     color: hsl(158deg 36% 38%);
-    margin: 0 1rem 0 0;
-}
-
-#price p {
-    text-decoration: line-through;
     margin: 0;
 }
 
@@ -85,6 +76,7 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
     margin: auto;
+    margin-top: 2rem;
 }
 
 button:hover {
@@ -95,13 +87,13 @@ button:active {
     background-color: hsl(157deg 44% 21%);
 }
 
-#addCart img {
+.addCart img {
     width: max-content;
     height: max-content;
     border-radius: 0;
 }
 
-#addCart {
+.addCart {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
@@ -117,6 +109,13 @@ footer p {
     margin: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+  }
+
 @media only screen and (max-width: 500px) {
 
     main {
@@ -125,15 +124,10 @@ footer p {
         height: auto;
         flex-direction: column;
     }
-    
-    #productPhotoDesk {
-        display: none;
-    }
 
-    #productPhotoMob {
-        display: flex;
-        height: 15rem;
-        margin: auto;
+    .productPhoto {
+        width: 21.4rem;
+        border-radius: 0;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
@@ -142,23 +136,32 @@ footer p {
         width: 85%;
     }
 
-    h1, h2, #price {
-        margin-left: 1.5rem;
+    .topText, .price {
+        margin: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    h1 {
         max-width: 18rem;
+        margin: 1rem 1.5rem
     }
 
     p {
-        font-size: 0.86rem;
         margin-left: 1.5rem;
+        font-size: 0.86rem;
         width: 18rem;
     }
 
-    aside {
+    .old-price {
+        margin: 0;
+    }
+
+    section {
+        margin: 0;
         width: 21.4rem;
         margin-bottom: 1.5rem;
     }
 
-    #price {
+    .price {
         margin: 1rem 1rem 1rem 1.5rem;
     }
 }
